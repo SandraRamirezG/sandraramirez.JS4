@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque de Diversiones</title>
+    
+   
+
+    <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--CDN TOASTIFY CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!--CDN SWEET2ALERT CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Parque Divertido</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Atracciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Bienvenido al Parque Divertido</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Atracciones</h2>
+                <!-- Las atracciones se agregarán aquí mediante JavaScript -->
+            </div>
+            <div class="col-md-6">
+                <h2>Carrito de Compras</h2>
+                <ul id="carrito" class="list-group">
+                    <!-- Los elementos del carrito se agregarán aquí mediante JavaScript -->
+                </ul>
+                <p>Total: $<span id="total">0.00</span></p>
+                <button class="btn btn-success" id="checkoutBtn">Realizar Compra</button>
+                
+                <!-- Botón para mostrar la forma de pago -->
+            <button class="btn btn-primary mt-2" id="mostrarFormaPagoBtn">Mostrar Forma de Pago</button>
+
+                <div id="formaPagoForm" style="display: none;">
+                    <h3>Forma de Pago</h3>
+                    <form id="formPagoForm">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formaPago" id="efectivo" value="1">
+                            <label class="form-check-label" for="efectivo">
+                                Debito (20% Descuento)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="formaPago" id="tarjeta" value="2">
+                            <label class="form-check-label" for="tarjeta">
+                                Tarjeta de crédito (10% Descuento)
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Confirmar Compra</button>
+                    </form>
+                </div>
+                <div id="resumenCompra"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

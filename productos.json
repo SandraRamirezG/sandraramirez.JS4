@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Acceso al parque",
+        "precio": 10000,
+        "Cantidad": 1,
+        "imagen": "./img/parquedenoche.jpg",
+        "alt": "Imagen del parque de noche"
+    },
+    {
+        "id": 2,
+        "nombre": "Rueda de la Fortuna",
+        "precio": 1500,
+        "Cantidad": 1,
+        "imagen": "./img/ruedadelafortuna.jpg",
+        "alt": "Imagen rueda de la fortuna"
+    },
+    {
+        "id": 3,
+        "nombre": "Laberinto de espejos",
+        "precio": 0,
+        "Cantidad": 1,
+        "imagen": "./img/laberintodeespejos.jpg",
+        "alt": "Imagen espejos"
+    },
+    {
+        "id": 4,
+        "nombre": "Almuerzo entretenido",
+        "precio": 5000,
+        "Cantidad": 1,
+        "imagen": "./img/comida.webp",
+        "alt": "comida"
+    },
+    {
+        "id": 5,
+        "nombre": "Traslados",
+        "precio": 500,
+        "Cantidad": 1,
+        "imagen": "./img/traslado.jpg",
+        "alt": "personas en bus"
+    }
+]
